@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" deactivate="deactivate" immediate="true" name="com.bmstu.process.manager.service.ActiveProcessManager">
+   <service>
+      <provide interface="com.bmstu.process.manager.IActiveProcessManager"/>
+   </service>
+   <reference bind="bindListener" cardinality="0..n" interface="com.bmstu.process.manager.IActiveProcessListener" name="Listener" policy="dynamic" unbind="unbindListener"/>
+   <implementation class="com.bmstu.process.manager.service.ActiveProcessManager"/>
+</scr:component>

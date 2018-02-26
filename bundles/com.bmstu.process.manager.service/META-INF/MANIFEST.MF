@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Service
+Bundle-SymbolicName: com.bmstu.process.manager.service
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: com.bmstu.process.manager;version="[1.0.0,2.0.0)",
+ com.bmstu.process.manager.model;version="[1.0.0,2.0.0)",
+ org.osgi.framework;version="[1.8.0,2.0.0)"
+Bundle-ActivationPolicy: lazy
+Service-Component: OSGI-INF/com.bmstu.process.manager.service.ActiveProcessManager.xml
+Bundle-ClassPath: libs/sigar-1.6.4.jar,
+ .
